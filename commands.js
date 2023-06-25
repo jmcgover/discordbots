@@ -9,7 +9,7 @@ function createCommandChoices() {
 
   for (let choice of choices) {
     commandChoices.push({
-      name: capitalize(Choice),
+      name: capitalize(choice),
       value: choice.toLowerCase(),
     });
   }
@@ -41,4 +41,4 @@ const CHALLENGE_COMMAND = {
 
 const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND];
 
-InstalGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
+InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);

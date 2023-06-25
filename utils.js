@@ -17,7 +17,7 @@ export function VerifyDiscordRequest(clientKey) {
 
 export async function DiscordRequest(endpoint, options) {
   // append endpoint to troot API URL
-  const url = "https://discord.com/api/v10" + endpoint;
+  const url = "https://discord.com/api/v10/" + endpoint;
 
   // Stringify payloads
   if (options.body) options.body = JSON.stringify(options.body);

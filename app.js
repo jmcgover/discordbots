@@ -24,7 +24,7 @@ const PORT = process.env.port || 3000;
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
 // Store for in-progress games. In production, you'd want to use a database.
-activeGames = {};
+const activeGames = {};
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests.
